@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "WeceHacks",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-wecehacks-staging-170126-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/6cca7073cec911909628949cc9d7fe6c6c542732"
+}
