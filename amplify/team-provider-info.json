@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-wecehacks-staging-170126-authRole",
+      "UnauthRoleArn": "arn:aws:iam::342637515977:role/amplify-wecehacks-staging-170126-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::342637515977:role/amplify-wecehacks-staging-170126-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-wecehacks-staging-170126-deployment",
+      "UnauthRoleName": "amplify-wecehacks-staging-170126-unauthRole",
+      "StackName": "amplify-wecehacks-staging-170126",
+      "StackId": "arn:aws:cloudformation:us-east-2:342637515977:stack/amplify-wecehacks-staging-170126/2c3b7330-c8a7-11ec-a5fc-0681c50cf2a4",
+      "AmplifyAppId": "d3udrfffpzstl5"
+    },
+    "categories": {
+      "auth": {
+        "WeceHacks": {}
+      }
+    }
+  }
+}
