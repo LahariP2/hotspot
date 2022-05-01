@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11D05D00F393B4EC9AF0AEE5 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A71F74FF2C65C6AFC582B53 /* amplifyconfiguration.json */; };
+		165B3F33281DDF420089F299 /* WeceHacksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B3F32281DDF420089F299 /* WeceHacksApp.swift */; };
+		165B3F37281DDF460089F299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165B3F36281DDF460089F299 /* Assets.xcassets */; };
+		165B3F3A281DDF460089F299 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165B3F39281DDF460089F299 /* Preview Assets.xcassets */; };
+		165B3F44281DDF460089F299 /* WeceHacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B3F43281DDF460089F299 /* WeceHacksTests.swift */; };
+		165B3F4E281DDF470089F299 /* WeceHacksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B3F4D281DDF470089F299 /* WeceHacksUITests.swift */; };
+		165B3F50281DDF470089F299 /* WeceHacksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B3F4F281DDF470089F299 /* WeceHacksUITestsLaunchTests.swift */; };
+		165B3F5D281DE0410089F299 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B3F5C281DE0410089F299 /* EventsView.swift */; };
+		165B3F60281DE13F0089F299 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 165B3F5F281DE13F0089F299 /* AWSAPIPlugin */; };
+		165B3F62281DE13F0089F299 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 165B3F61281DE13F0089F299 /* AWSCognitoAuthPlugin */; };
+		165B3F64281DE13F0089F299 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 165B3F63281DE13F0089F299 /* AWSDataStorePlugin */; };
+		165B3F66281DE13F0089F299 /* AWSLocationGeoPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 165B3F65281DE13F0089F299 /* AWSLocationGeoPlugin */; };
+		165B3F68281DE13F0089F299 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 165B3F67281DE13F0089F299 /* Amplify */; };
+		165B3F6A281DE51C0089F299 /* Event+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B3F69281DE51C0089F299 /* Event+Extension.swift */; };
+		16D62186281EE37000A268F4 /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D62185281EE37000A268F4 /* TempView.swift */; };
+		5C2B878092061E6B66B39049 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C5C280A4899CF99591C6BC2 /* awsconfiguration.json */; };
+		767D5DC0C89EEAF309CDAF0A /* Event+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD758BFCF30F8FFC2B0A477 /* Event+Schema.swift */; };
+		B7AEC5327478EEE64E304DE8 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B8A67AE5C366ED374F478 /* AmplifyModels.swift */; };
+		CA2B4D8CB8DA2F3D5069A6B1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710AAF998D7F2C09E64D618B /* Event.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		165B3F40281DDF460089F299 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 165B3F27281DDF420089F299 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 165B3F2E281DDF420089F299;
+			remoteInfo = WeceHacks;
+		};
+		165B3F4A281DDF470089F299 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 165B3F27281DDF420089F299 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 165B3F2E281DDF420089F299;
+			remoteInfo = WeceHacks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		165B3F2F281DDF420089F299 /* WeceHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeceHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		165B3F32281DDF420089F299 /* WeceHacksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeceHacksApp.swift; sourceTree = "<group>"; };
+		165B3F36281DDF460089F299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		165B3F39281DDF460089F299 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		165B3F3F281DDF460089F299 /* WeceHacksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeceHacksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		165B3F43281DDF460089F299 /* WeceHacksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeceHacksTests.swift; sourceTree = "<group>"; };
+		165B3F49281DDF470089F299 /* WeceHacksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeceHacksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		165B3F4D281DDF470089F299 /* WeceHacksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeceHacksUITests.swift; sourceTree = "<group>"; };
+		165B3F4F281DDF470089F299 /* WeceHacksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeceHacksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		165B3F5C281DE0410089F299 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		165B3F69281DE51C0089F299 /* Event+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+Extension.swift"; sourceTree = "<group>"; };
+		16D62185281EE37000A268F4 /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
+		4C5C280A4899CF99591C6BC2 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		704B8A67AE5C366ED374F478 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		710AAF998D7F2C09E64D618B /* Event.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Event.swift; path = amplify/generated/models/Event.swift; sourceTree = "<group>"; };
+		8A71F74FF2C65C6AFC582B53 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		CDD758BFCF30F8FFC2B0A477 /* Event+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Event+Schema.swift"; path = "amplify/generated/models/Event+Schema.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		165B3F2C281DDF420089F299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165B3F64281DE13F0089F299 /* AWSDataStorePlugin in Frameworks */,
+				165B3F68281DE13F0089F299 /* Amplify in Frameworks */,
+				165B3F60281DE13F0089F299 /* AWSAPIPlugin in Frameworks */,
+				165B3F66281DE13F0089F299 /* AWSLocationGeoPlugin in Frameworks */,
+				165B3F62281DE13F0089F299 /* AWSCognitoAuthPlugin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		165B3F3C281DDF460089F299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		165B3F46281DDF470089F299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		082DD71E5F13391977336055 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				704B8A67AE5C366ED374F478 /* AmplifyModels.swift */,
+				CDD758BFCF30F8FFC2B0A477 /* Event+Schema.swift */,
+				710AAF998D7F2C09E64D618B /* Event.swift */,
+			);
+			name = AmplifyModels;
+			sourceTree = "<group>";
+		};
+		165B3F26281DDF420089F299 = {
+			isa = PBXGroup;
+			children = (
+				165B3F31281DDF420089F299 /* WeceHacks */,
+				165B3F42281DDF460089F299 /* WeceHacksTests */,
+				165B3F4C281DDF470089F299 /* WeceHacksUITests */,
+				165B3F30281DDF420089F299 /* Products */,
+				B75BBB2EC2A094377C025597 /* AmplifyConfig */,
+				082DD71E5F13391977336055 /* AmplifyModels */,
+			);
+			sourceTree = "<group>";
+		};
+		165B3F30281DDF420089F299 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				165B3F2F281DDF420089F299 /* WeceHacks.app */,
+				165B3F3F281DDF460089F299 /* WeceHacksTests.xctest */,
+				165B3F49281DDF470089F299 /* WeceHacksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		165B3F31281DDF420089F299 /* WeceHacks */ = {
+			isa = PBXGroup;
+			children = (
+				165B3F32281DDF420089F299 /* WeceHacksApp.swift */,
+				165B3F36281DDF460089F299 /* Assets.xcassets */,
+				165B3F38281DDF460089F299 /* Preview Content */,
+				165B3F5C281DE0410089F299 /* EventsView.swift */,
+				165B3F69281DE51C0089F299 /* Event+Extension.swift */,
+				16D62185281EE37000A268F4 /* TempView.swift */,
+			);
+			path = WeceHacks;
+			sourceTree = "<group>";
+		};
+		165B3F38281DDF460089F299 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				165B3F39281DDF460089F299 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		165B3F42281DDF460089F299 /* WeceHacksTests */ = {
+			isa = PBXGroup;
+			children = (
+				165B3F43281DDF460089F299 /* WeceHacksTests.swift */,
+			);
+			path = WeceHacksTests;
+			sourceTree = "<group>";
+		};
+		165B3F4C281DDF470089F299 /* WeceHacksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				165B3F4D281DDF470089F299 /* WeceHacksUITests.swift */,
+				165B3F4F281DDF470089F299 /* WeceHacksUITestsLaunchTests.swift */,
+			);
+			path = WeceHacksUITests;
+			sourceTree = "<group>";
+		};
+		B75BBB2EC2A094377C025597 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				4C5C280A4899CF99591C6BC2 /* awsconfiguration.json */,
+				8A71F74FF2C65C6AFC582B53 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		165B3F2E281DDF420089F299 /* WeceHacks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 165B3F53281DDF470089F299 /* Build configuration list for PBXNativeTarget "WeceHacks" */;
+			buildPhases = (
+				165B3F2B281DDF420089F299 /* Sources */,
+				165B3F2C281DDF420089F299 /* Frameworks */,
+				165B3F2D281DDF420089F299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeceHacks;
+			packageProductDependencies = (
+				165B3F5F281DE13F0089F299 /* AWSAPIPlugin */,
+				165B3F61281DE13F0089F299 /* AWSCognitoAuthPlugin */,
+				165B3F63281DE13F0089F299 /* AWSDataStorePlugin */,
+				165B3F65281DE13F0089F299 /* AWSLocationGeoPlugin */,
+				165B3F67281DE13F0089F299 /* Amplify */,
+			);
+			productName = WeceHacks;
+			productReference = 165B3F2F281DDF420089F299 /* WeceHacks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		165B3F3E281DDF460089F299 /* WeceHacksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 165B3F56281DDF470089F299 /* Build configuration list for PBXNativeTarget "WeceHacksTests" */;
+			buildPhases = (
+				165B3F3B281DDF460089F299 /* Sources */,
+				165B3F3C281DDF460089F299 /* Frameworks */,
+				165B3F3D281DDF460089F299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				165B3F41281DDF460089F299 /* PBXTargetDependency */,
+			);
+			name = WeceHacksTests;
+			productName = WeceHacksTests;
+			productReference = 165B3F3F281DDF460089F299 /* WeceHacksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		165B3F48281DDF470089F299 /* WeceHacksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 165B3F59281DDF470089F299 /* Build configuration list for PBXNativeTarget "WeceHacksUITests" */;
+			buildPhases = (
+				165B3F45281DDF470089F299 /* Sources */,
+				165B3F46281DDF470089F299 /* Frameworks */,
+				165B3F47281DDF470089F299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				165B3F4B281DDF470089F299 /* PBXTargetDependency */,
+			);
+			name = WeceHacksUITests;
+			productName = WeceHacksUITests;
+			productReference = 165B3F49281DDF470089F299 /* WeceHacksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		165B3F27281DDF420089F299 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					165B3F2E281DDF420089F299 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					165B3F3E281DDF460089F299 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 165B3F2E281DDF420089F299;
+					};
+					165B3F48281DDF470089F299 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 165B3F2E281DDF420089F299;
+					};
+				};
+			};
+			buildConfigurationList = 165B3F2A281DDF420089F299 /* Build configuration list for PBXProject "WeceHacks" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 165B3F26281DDF420089F299;
+			packageReferences = (
+				165B3F5E281DE13F0089F299 /* XCRemoteSwiftPackageReference "amplify-ios" */,
+			);
+			productRefGroup = 165B3F30281DDF420089F299 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				165B3F2E281DDF420089F299 /* WeceHacks */,
+				165B3F3E281DDF460089F299 /* WeceHacksTests */,
+				165B3F48281DDF470089F299 /* WeceHacksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		165B3F2D281DDF420089F299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165B3F3A281DDF460089F299 /* Preview Assets.xcassets in Resources */,
+				165B3F37281DDF460089F299 /* Assets.xcassets in Resources */,
+				5C2B878092061E6B66B39049 /* awsconfiguration.json in Resources */,
+				11D05D00F393B4EC9AF0AEE5 /* amplifyconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		165B3F3D281DDF460089F299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		165B3F47281DDF470089F299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		165B3F2B281DDF420089F299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D62186281EE37000A268F4 /* TempView.swift in Sources */,
+				165B3F33281DDF420089F299 /* WeceHacksApp.swift in Sources */,
+				B7AEC5327478EEE64E304DE8 /* AmplifyModels.swift in Sources */,
+				165B3F6A281DE51C0089F299 /* Event+Extension.swift in Sources */,
+				767D5DC0C89EEAF309CDAF0A /* Event+Schema.swift in Sources */,
+				CA2B4D8CB8DA2F3D5069A6B1 /* Event.swift in Sources */,
+				165B3F5D281DE0410089F299 /* EventsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		165B3F3B281DDF460089F299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165B3F44281DDF460089F299 /* WeceHacksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		165B3F45281DDF470089F299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165B3F4E281DDF470089F299 /* WeceHacksUITests.swift in Sources */,
+				165B3F50281DDF470089F299 /* WeceHacksUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		165B3F41281DDF460089F299 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 165B3F2E281DDF420089F299 /* WeceHacks */;
+			targetProxy = 165B3F40281DDF460089F299 /* PBXContainerItemProxy */;
+		};
+		165B3F4B281DDF470089F299 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 165B3F2E281DDF420089F299 /* WeceHacks */;
+			targetProxy = 165B3F4A281DDF470089F299 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		165B3F51281DDF470089F299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		165B3F52281DDF470089F299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		165B3F54281DDF470089F299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WeceHacks/Preview Content\"";
+				DEVELOPMENT_TEAM = WRDYHR96ZZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = laharip.WeceHacks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		165B3F55281DDF470089F299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WeceHacks/Preview Content\"";
+				DEVELOPMENT_TEAM = WRDYHR96ZZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = laharip.WeceHacks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		165B3F57281DDF470089F299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WRDYHR96ZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = laharip.WeceHacksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeceHacks.app/WeceHacks";
+			};
+			name = Debug;
+		};
+		165B3F58281DDF470089F299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WRDYHR96ZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = laharip.WeceHacksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeceHacks.app/WeceHacks";
+			};
+			name = Release;
+		};
+		165B3F5A281DDF470089F299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WRDYHR96ZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = laharip.WeceHacksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeceHacks;
+			};
+			name = Debug;
+		};
+		165B3F5B281DDF470089F299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WRDYHR96ZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = laharip.WeceHacksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeceHacks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		165B3F2A281DDF420089F299 /* Build configuration list for PBXProject "WeceHacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165B3F51281DDF470089F299 /* Debug */,
+				165B3F52281DDF470089F299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		165B3F53281DDF470089F299 /* Build configuration list for PBXNativeTarget "WeceHacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165B3F54281DDF470089F299 /* Debug */,
+				165B3F55281DDF470089F299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		165B3F56281DDF470089F299 /* Build configuration list for PBXNativeTarget "WeceHacksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165B3F57281DDF470089F299 /* Debug */,
+				165B3F58281DDF470089F299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		165B3F59281DDF470089F299 /* Build configuration list for PBXNativeTarget "WeceHacksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165B3F5A281DDF470089F299 /* Debug */,
+				165B3F5B281DDF470089F299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		165B3F5E281DE13F0089F299 /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		165B3F5F281DE13F0089F299 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 165B3F5E281DE13F0089F299 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSAPIPlugin;
+		};
+		165B3F61281DE13F0089F299 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 165B3F5E281DE13F0089F299 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		165B3F63281DE13F0089F299 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 165B3F5E281DE13F0089F299 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSDataStorePlugin;
+		};
+		165B3F65281DE13F0089F299 /* AWSLocationGeoPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 165B3F5E281DE13F0089F299 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSLocationGeoPlugin;
+		};
+		165B3F67281DE13F0089F299 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 165B3F5E281DE13F0089F299 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 165B3F27281DDF420089F299 /* Project object */;
+}

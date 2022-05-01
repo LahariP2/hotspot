@@ -1,0 +1,84 @@
+{
+    "UserAgent": "aws-amplify-cli/2.0",
+    "Version": "1.0",
+    "api": {
+        "plugins": {
+            "awsAPIPlugin": {
+                "WeceHacks": {
+                    "endpointType": "GraphQL",
+                    "endpoint": "https://o772m3hvfnbktferj6ixpfmlke.appsync-api.us-east-2.amazonaws.com/graphql",
+                    "region": "us-east-2",
+                    "authorizationType": "API_KEY",
+                    "apiKey": "da2-cpi5uycvgjaqddq36whjqyr5le"
+                }
+            }
+        }
+    },
+    "auth": {
+        "plugins": {
+            "awsCognitoAuthPlugin": {
+                "UserAgent": "aws-amplify/cli",
+                "Version": "0.1.0",
+                "IdentityManager": {
+                    "Default": {}
+                },
+                "CredentialsProvider": {
+                    "CognitoIdentity": {
+                        "Default": {
+                            "PoolId": "us-east-2:3e28c922-bfb1-42af-973e-387dab6a758c",
+                            "Region": "us-east-2"
+                        }
+                    }
+                },
+                "CognitoUserPool": {
+                    "Default": {
+                        "PoolId": "us-east-2_SJqaFcTWH",
+                        "AppClientId": "5ahjno9le69vtt0ft9viqnfeq8",
+                        "Region": "us-east-2"
+                    }
+                },
+                "Auth": {
+                    "Default": {
+                        "authenticationFlowType": "USER_SRP_AUTH",
+                        "socialProviders": [],
+                        "usernameAttributes": [
+                            "EMAIL"
+                        ],
+                        "signupAttributes": [],
+                        "passwordProtectionSettings": {
+                            "passwordPolicyMinLength": 8,
+                            "passwordPolicyCharacters": [
+                                "REQUIRES_LOWERCASE",
+                                "REQUIRES_NUMBERS",
+                                "REQUIRES_SYMBOLS",
+                                "REQUIRES_UPPERCASE"
+                            ]
+                        },
+                        "mfaConfiguration": "OFF",
+                        "mfaTypes": [
+                            "SMS"
+                        ],
+                        "verificationMechanisms": [
+                            "EMAIL"
+                        ]
+                    }
+                },
+                "AppSync": {
+                    "Default": {
+                        "ApiUrl": "https://o772m3hvfnbktferj6ixpfmlke.appsync-api.us-east-2.amazonaws.com/graphql",
+                        "Region": "us-east-2",
+                        "AuthMode": "API_KEY",
+                        "ApiKey": "da2-cpi5uycvgjaqddq36whjqyr5le",
+                        "ClientDatabasePrefix": "WeceHacks_API_KEY"
+                    },
+                    "WeceHacks_AWS_IAM": {
+                        "ApiUrl": "https://o772m3hvfnbktferj6ixpfmlke.appsync-api.us-east-2.amazonaws.com/graphql",
+                        "Region": "us-east-2",
+                        "AuthMode": "AWS_IAM",
+                        "ClientDatabasePrefix": "WeceHacks_AWS_IAM"
+                    }
+                }
+            }
+        }
+    }
+}
