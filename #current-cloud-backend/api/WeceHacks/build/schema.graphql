@@ -1,0 +1,183 @@
+
+type Event @aws_iam @aws_api_key {
+  id: ID!
+  name: String!
+  date: AWSDateTime!
+  location: String!
+  details: String
+  points: Int!
+  code: String!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  _version: Int!
+  _deleted: Boolean
+  _lastChangedAt: AWSTimestamp!
+}
+
+input ModelStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelBooleanInput {
+  ne: Boolean
+  eq: Boolean
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+enum ModelAttributeTypes {
+  binary
+  binarySet
+  bool
+  list
+  map
+  number
+  numberSet
+  string
+  stringSet
+  _null
+}
+
+input ModelSizeInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+}
+
+enum ModelSortDirection {
+  ASC
+  DESC
+}
+
+type ModelEventConnection @aws_api_key @aws_iam {
+  items: [Event]!
+  nextToken: String
+  startedAt: AWSTimestamp
+}
+
+input ModelEventFilterInput {
+  id: ModelIDInput
+  name: ModelStringInput
+  date: ModelStringInput
+  location: ModelStringInput
+  details: ModelStringInput
+  points: ModelIntInput
+  code: ModelStringInput
+  and: [ModelEventFilterInput]
+  or: [ModelEventFilterInput]
+  not: ModelEventFilterInput
+}
+
+type Query {
+  getEvent(id: ID!): Event @aws_api_key @aws_iam
+  listEvents(filter: ModelEventFilterInput, limit: Int, nextToken: String): ModelEventConnection @aws_api_key @aws_iam
+  syncEvents(filter: ModelEventFilterInput, limit: Int, nextToken: String, lastSync: AWSTimestamp): ModelEventConnection @aws_api_key @aws_iam
+}
+
+input ModelEventConditionInput {
+  name: ModelStringInput
+  date: ModelStringInput
+  location: ModelStringInput
+  details: ModelStringInput
+  points: ModelIntInput
+  code: ModelStringInput
+  and: [ModelEventConditionInput]
+  or: [ModelEventConditionInput]
+  not: ModelEventConditionInput
+}
+
+input CreateEventInput {
+  id: ID
+  name: String!
+  date: AWSDateTime!
+  location: String!
+  details: String
+  points: Int!
+  code: String!
+  _version: Int
+}
+
+input UpdateEventInput {
+  id: ID!
+  name: String
+  date: AWSDateTime
+  location: String
+  details: String
+  points: Int
+  code: String
+  _version: Int
+}
+
+input DeleteEventInput {
+  id: ID!
+  _version: Int
+}
+
+type Mutation {
+  createEvent(input: CreateEventInput!, condition: ModelEventConditionInput): Event @aws_api_key @aws_iam
+  updateEvent(input: UpdateEventInput!, condition: ModelEventConditionInput): Event @aws_api_key @aws_iam
+  deleteEvent(input: DeleteEventInput!, condition: ModelEventConditionInput): Event @aws_api_key @aws_iam
+}
+
+type Subscription {
+  onCreateEvent: Event @aws_subscribe(mutations: ["createEvent"]) @aws_api_key @aws_iam
+  onUpdateEvent: Event @aws_subscribe(mutations: ["updateEvent"]) @aws_api_key @aws_iam
+  onDeleteEvent: Event @aws_subscribe(mutations: ["deleteEvent"]) @aws_api_key @aws_iam
+}
+
